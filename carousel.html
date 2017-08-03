@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/custom.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Bootstrap 101 Template</title>
+ </head>
+ <body>
+   <div class="container"> 
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span> <!-- icon-bar will be a line icon in the button -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>    
+        <a class="navbar-brand" href="#">Programming Knowledge</a>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li> <!-- active means the entry will be highlighted -->
+            <li><a href="#">About</a></li> 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a> <!-- carret creates a down-arrow icon indicating that the navbar  button is a dropdown -->
+                <ul class ="dropdown-menu">
+                  <li class="dropdown-header">Examples</li>
+                  <li><a href="#">C++</a></li>
+                  <li><a href="#">Java</a></li>
+                  <li class="dropdown-header">Tutorials</li>
+                  <li><a href="#">C++</a></li>
+                  <li><a href="#">Java</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>  
+    </nav>
+
+      
+    <div class="container">
+      <!-- Used for highlighting stuff -->
+      <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="10000">  <!-- interval in milliseconds -->
+        <ol class="carousel-indicators">
+          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#mycarousel" data-slide-to="1"></li>
+          <li data-target="#mycarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/1.png">
+            <div class="carousel-caption">
+              <h1>Theme 1</h1>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/2.png">
+            <div class="carousel-caption">
+              <h1>Theme 2</h1>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/3.png">
+            <div class="carousel-caption">
+              <h1>Theme 3</h1>
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4"> <!-- sm means it will stake vertically when browser window size is small, md=at medium etc-->
+          <a href="#" class="thumbnail">
+            <img src="img/cpp.png" alt="cpp turorial"></a>
+          </a>
+          <h3>C++</h3>
+          <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+          </p>
+          <button type="button" class="btn btn-danger">Thank You</button>
+        </div>
+         <div class="col-sm-4">
+          <a href="#" class="thumbnail">
+            <img src="img/java.png" alt="cpp turorial"></a>
+          </a>
+          <h3>Java</h3>
+          <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+          </p>
+          <button type="button" class="btn btn-danger">Thank You</button>
+        </div>
+         <div class="col-sm-4">
+          <a href="#" class="thumbnail">
+            <img src="img/python.jpg" alt="cpp turorial"></a>
+          </a>
+          <h3>Python</h3>
+          <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus ipsum in augue semper tempor. Donec in sollicit
+          </p>
+          <button type="button" class="btn btn-danger">Thank You</button>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+
+    </div>
+
+    <!-- Fixed footer -->
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+      <div class="container">
+        <div class="navbar-text pull-left">
+          <p>copyright Brosky 2017</p>
+        </div>
+         <div class="navbar-text pull-right">
+          <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
